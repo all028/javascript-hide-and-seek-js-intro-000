@@ -1,1 +1,36 @@
+function getFirstSelector(temp){
+  var found = document.querySelector(temp);
+  return found
+}
 
+function nestedTarget(){
+  var rslt = document.querySelector('.target')
+  return rslt;
+}
+
+function increaseRankBy(n){
+  const lis = document
+    .getElementById('app')
+    .querySelectorAll('ul.ranked-list li');
+
+  for (let i = 0; i < lis.length; i++) {
+    var j = lis[i].innerHTML
+    var k = parseInt(j) + parseInt(n)
+    lis[i].innerHTML = (k).toString();
+  }
+}
+
+function deepestChild(){
+  const list = document.querySelectorAll('.grand-node')
+
+ var max = list.length -1
+  for (let i = 0; i < list.length; i++){
+    if (i === max){
+      var rslt = document.querySelector('div')
+      return list
+    }//end if
+
+  }//end for
+
+
+}
